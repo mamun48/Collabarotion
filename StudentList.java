@@ -2,7 +2,8 @@ import java.io.*;
 import java.text.*;
 import java.util.*;
 public class StudentList {
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
 
         //		Check arguments
         if (args[0].equals("a"))
@@ -47,8 +48,7 @@ public class StudentList {
             System.out.println("Loading data ...");
             try 
 			{
-                BufferedWriter s = new BufferedWriter(
-                    new FileWriter("students.txt", true));
+                BufferedWriter s = new BufferedWriter(new FileWriter("students.txt", true));
                 String t = args[0].substring(1);
                 Date d = new Date();
                 String df = "dd/mm/yyyy-hh:mm:ss a";

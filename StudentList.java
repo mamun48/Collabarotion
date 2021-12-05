@@ -1,11 +1,16 @@
 import java.io.*;
 import java.text.*;
 import java.util.*;
+//import java.util.concurrent.ArrayBlockingQueue;
 public class StudentList {
-    public static void main(String[] args) {
-
+    public static void main(String[] args) 
+    {
+        if(args.length !=1 )
+        {
+            System.out.println("Invalide ! There was no argument !");
+        }
         //		Check arguments
-        if (args[0].equals("a"))
+        else if (args[0].equals("a"))
 		{
             System.out.println("Loading data ...");
             try 
@@ -113,6 +118,11 @@ public class StudentList {
                 
             }
             System.out.println("Data Loaded.");
+        }
+        else 
+        {
+            System.out.println("Wrong Argument ! Plese enter valied argument !!");
+            System.out.println("Pass a || c || + || ? ");
         }
     }
 }
